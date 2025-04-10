@@ -12,7 +12,7 @@ public class SafeCopier extends Copier {
     public void run(){
             while (stringIterator.hasNext()) {
                 synchronized (this) {
-                    copied += stringIterator.next();
+                    copied += stringIterator.next()+" ";
             }
         }
     }

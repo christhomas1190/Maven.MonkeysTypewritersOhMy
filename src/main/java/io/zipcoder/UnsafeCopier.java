@@ -14,7 +14,7 @@ public class UnsafeCopier extends Copier {
     while(stringIterator.hasNext()) {
      //fills the empty copied variable with the next occurrence of a string and adds a " "
      synchronized (this) {
-         copied += stringIterator.next();
+         copied += stringIterator.next()+" ";
              }
         }
     }
